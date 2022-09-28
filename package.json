@@ -1,0 +1,19 @@
+{
+  "name": "eslint-pass",
+  "version": "1.0.0",
+  "description": "Your goal is to set up an NPM project which will lint and prettify the code in index.js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohammedAlmanea/eslint-pass.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MohammedAlmanea/eslint-pass/issues"
+  },
+  "homepage": "https://github.com/MohammedAlmanea/eslint-pass#readme"
+}
