@@ -20,7 +20,7 @@ const menuQ = () => {
     }
   });
 };
-let milkQ = () => {
+const milkQ = () => {
   return new Promise((resolve, reject) => {
     rl.question('How many cups of milk to add? ', (answer) => {
       resolve(answer);
@@ -30,14 +30,14 @@ let milkQ = () => {
 
 // User questions
 const userOptions = async (mochaObject) => {
-  let milkPicked = await milkQ();
-  let milkChoice = parseInt(milkPicked);
-  var espPicked = await espressoQ();
-  let espChoice = parseInt(espPicked);
+  const milkPicked = await milkQ();
+  const milkChoice = parseInt(milkPicked);
+  const espPicked = await espressoQ();
+  const espChoice = parseInt(espPicked);
   // If peppermint mocha
   if (mochaObject instanceof PeppermintMocha) {
-    let pepPicked = await peppermintQ();
-    let pepChoice = parseInt(pepPicked);
+    const pepPicked = await peppermintQ();
+    const pepChoice = parseInt(pepPicked);
     mochaObject.peppermintSyrup = pepChoice;
   }
   mochaObject.milk = milkChoice;
@@ -116,7 +116,7 @@ const main = () => {
           break;
         }
         case 1:
-          let whiteMochaVar = 0;
+          const whiteMochaVar = 0;
           const whiteMocha = new WhiteChocolateMocha();
           await userOptions(whiteMocha);
           break;
