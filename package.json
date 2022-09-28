@@ -4,7 +4,8 @@
   "description": "Your goal is to set up an NPM project which will lint and prettify the code in index.js.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prettier": "prettier --config .prettierrc **/*.js --write",
+    "lint": "eslint --config .eslintrc **/*.js" 
   },
   "repository": {
     "type": "git",
